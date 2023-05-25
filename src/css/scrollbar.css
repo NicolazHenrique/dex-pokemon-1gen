@@ -1,0 +1,31 @@
+/* ===== Scrollbar CSS ===== */
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+.modo-escuro {
+    *::-webkit-scrollbar-thumb {
+        background-color: #000000;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 3px solid #fcfcfc;
+    }
+}

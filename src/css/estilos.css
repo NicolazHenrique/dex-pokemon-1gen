@@ -1,0 +1,241 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-image: url(https://rodapemania.com.br/wp-content/uploads/2020/07/chevron-branco2.jpg);
+    background-size: contain;
+    color: rgb(0, 0, 0);
+}
+
+body.modo-escuro {
+    background-image: url(https://rodapemania.com.br/wp-content/uploads/2020/07/chevron-preto2.jpg);
+    background-size: contain;
+    color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemon {
+    background-image: linear-gradient(to bottom, #ffffff, #8f8f8f);
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    border: #000 solid;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #9969e1;
+}
+
+.modo-escuro .cartao-pokemon:hover {
+    background-color: #000000;
+}
+
+
+.modo-escuro .cartao-pokemon {
+    background-image: linear-gradient(to bottom, #474747, #101010);
+    border: #fff solid;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.modo-escuro .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 75px;
+    height: 75px;
+}
+
+.gif-growlithe {
+    width: auto;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .tipo-grama,
+.tipo-fogo,
+.tipo-veneno,
+.tipo-agua,
+.tipo-voador,
+.tipo-inseto,
+.tipo-normal,
+.tipo-eletrico,
+.tipo-terra,
+.tipo-fada,
+.tipo-lutador,
+.tipo-psiquico,
+.tipo-pedra,
+.tipo-metal,
+.tipo-gelo,
+.tipo-fantasma,
+.tipo-dragao {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.tipo-dragao{
+    background-color: #7038F8;
+}
+
+.tipo-fantasma{
+    background-color: #705898;
+}
+
+.tipo-gelo {
+    background-color: #98D8D8;
+}
+
+.tipo-metal {
+    background-color: #B8B8D0;
+}
+
+.tipo-pedra {
+    background-color: #B8A038;
+}
+
+.tipo-psiquico {
+    background-color: #F85888;
+}
+
+.tipo-lutador {
+    background-color: #C03028;
+}
+
+.tipo-grama {
+    background-color: #7ac74c;
+}
+
+.tipo-agua {
+    background-color: #6390f0;
+}
+
+.tipo-fogo {
+    background-color: #ee8130;
+}
+
+.tipo-inseto {
+    background-color: #a6b91a;
+}
+
+.tipo-veneno {
+    background-color: #df67ddfb;
+}
+
+.tipo-voador {
+    background-color: #89f;
+}
+
+.tipo-normal {
+    background-color: #A8A878;
+}
+
+.tipo-eletrico {
+    background-color: #F8D030;
+}
+
+.tipo-terra {
+    background-color: #E0C068;
+}
+
+.tipo-fada {
+    background-color: #EE99AC;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+body {
+    -youbkit-touch-callout: none;
+    -youbkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ol-botao{
+    text-align: center;
+    padding: 12px;
+}
+
+.ol-botao li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.ol-botao a{
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+    color: #000;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    height: 50px;
+}
+
+.modo-escuro .botao-troca-pagina{
+    color: white;
+    border: 1px solid white;
+}
